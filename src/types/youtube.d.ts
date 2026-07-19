@@ -5,6 +5,9 @@ declare global {
     playVideo: () => void;
     pauseVideo: () => void;
     stopVideo: () => void;
+    mute: () => void;
+    unMute: () => void;
+    isMuted: () => boolean;
     setVolume: (volume: number) => void;
     seekTo: (seconds: number, allowSeekAhead?: boolean) => void;
     destroy: () => void;
@@ -22,6 +25,7 @@ declare global {
     events?: {
       onReady?: (event: YTPlayerEvent) => void;
       onStateChange?: (event: YTPlayerEvent & { data: number }) => void;
+      onAutoplayBlocked?: () => void;
     };
   }
 
@@ -31,6 +35,7 @@ declare global {
       ENDED: number;
       PLAYING: number;
       PAUSED: number;
+      UNSTARTED: number;
     };
   }
 

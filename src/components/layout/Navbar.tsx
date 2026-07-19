@@ -42,7 +42,7 @@ export function Navbar() {
           href="#home"
           className="font-serif text-lg font-medium text-warm-brown transition-colors hover:text-gold-dark"
         >
-          A & N
+          AF
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">

@@ -79,7 +79,7 @@ export function WeddingWishes() {
                   onChange={(e) => setMessage(e.target.value)}
                   required
                   rows={4}
-                  placeholder="Write your wishes for the couple..."
+                  placeholder="Write your wishes for Ammar Fauzan..."
                   className="w-full resize-none rounded-xl border border-gold/20 bg-ivory/80 px-4 py-3 font-sans text-sm text-warm-brown placeholder:text-warm-brown/30 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                 />
               </div>
@@ -122,7 +122,7 @@ export function WeddingWishes() {
 
         {wishes.length === 0 && (
           <p className="text-center font-sans text-sm text-warm-brown/45">
-            Be the first to leave a wish for the happy couple.
+            Be the first to leave a wish for Ammar Fauzan.
           </p>
         )}
       </div>

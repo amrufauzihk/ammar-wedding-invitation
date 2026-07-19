@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { BackgroundEffects } from "@/components/effects/BackgroundEffects";
 import { Hero } from "@/sections/Hero";
-import { BrideGroom } from "@/sections/BrideGroom";
+import { GroomSection } from "@/sections/GroomSection";
 import { WeddingEvent } from "@/sections/WeddingEvent";
 import { LoveStory } from "@/sections/LoveStory";
 import { Gallery } from "@/sections/Gallery";
@@ -20,7 +20,7 @@ export function InvitationContent() {
 
       <main>
         <Hero />
-        <BrideGroom />
+        <GroomSection />
         <WeddingEvent />
         <LoveStory />
         <Gallery />

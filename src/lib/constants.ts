@@ -3,19 +3,17 @@ export const BACKGROUND_MUSIC_YOUTUBE_URL =
   "https://www.youtube.com/watch?v=2e0BMACvymo";
 export const BACKGROUND_MUSIC_START_SECONDS = 15;
 
-export const COUPLE = {
-  groom: "Ammar Fauzan",
-  bride: "No Name",
-} as const;
+export const GROOM_NAME = "Ammar Fauzan";
+export const WEDDING_TITLE = "The Wedding of Ammar Fauzan";
 
 export const WEDDING_DATE = "Saturday, 15 November 2026";
 
 export const WEDDING_QUOTE =
-  "Two souls, one heart — united in love, blessed by family, and guided by faith.";
+  "A new chapter begins — blessed by family, guided by faith, and filled with gratitude.";
 
 export const NAV_LINKS = [
   { href: "#home", label: "Home" },
-  { href: "#couple", label: "Couple" },
+  { href: "#groom", label: "Groom" },
   { href: "#event", label: "Event" },
   { href: "#story", label: "Story" },
   { href: "#gallery", label: "Gallery" },
@@ -23,27 +21,15 @@ export const NAV_LINKS = [
   { href: "#gift", label: "Gift" },
 ] as const;
 
-export const BRIDE_GROOM = {
-  groom: {
-    name: COUPLE.groom,
-    description:
-      "A gentle soul with a warm smile, devoted to family and guided by faith and tradition.",
-    parents: {
-      father: "Bapak [Nama Ayah]",
-      mother: "Ibu [Nama Ibu]",
-    },
-    photo: "/images/groom-placeholder.svg",
+export const GROOM_PROFILE = {
+  name: GROOM_NAME,
+  description:
+    "A gentle soul with a warm smile, devoted to family and guided by faith and tradition.",
+  parents: {
+    father: "Bapak [Nama Ayah]",
+    mother: "Ibu [Nama Ibu]",
   },
-  bride: {
-    name: COUPLE.bride,
-    description:
-      "Graceful and kind-hearted, bringing light and joy to every moment she shares.",
-    parents: {
-      father: "Bapak [Nama Ayah]",
-      mother: "Ibu [Nama Ibu]",
-    },
-    photo: "/images/bride-placeholder.svg",
-  },
+  photo: "/images/groom-placeholder.svg",
 } as const;
 
 export const EVENTS = [
@@ -95,24 +81,24 @@ export const LOVE_STORY = [
 ] as const;
 
 export const GALLERY_IMAGES = [
-  { src: "/images/gallery-1.svg", alt: "Couple moment 1" },
-  { src: "/images/gallery-2.svg", alt: "Couple moment 2" },
-  { src: "/images/gallery-3.svg", alt: "Couple moment 3" },
-  { src: "/images/gallery-4.svg", alt: "Couple moment 4" },
-  { src: "/images/gallery-5.svg", alt: "Couple moment 5" },
-  { src: "/images/gallery-6.svg", alt: "Couple moment 6" },
+  { src: "/images/gallery-1.svg", alt: "Wedding moment 1" },
+  { src: "/images/gallery-2.svg", alt: "Wedding moment 2" },
+  { src: "/images/gallery-3.svg", alt: "Wedding moment 3" },
+  { src: "/images/gallery-4.svg", alt: "Wedding moment 4" },
+  { src: "/images/gallery-5.svg", alt: "Wedding moment 5" },
+  { src: "/images/gallery-6.svg", alt: "Wedding moment 6" },
 ] as const;
 
 export const GIFT_INFO = {
   bankName: "Bank [Nama Bank]",
-  accountName: COUPLE.groom,
+  accountName: GROOM_NAME,
   accountNumber: "1234567890",
   qrisLabel: "Scan QRIS",
 } as const;
 
 export const CLOSING = {
   thankYou:
-    "Thank you for being part of our special day. Your presence, prayers, and warm wishes mean the world to us.",
+    "Thank you for being part of this special day. Your presence, prayers, and warm wishes mean the world to us.",
   bugisClosing:
     "Matoanna bise' ri kalawa' — semoga kebahagiaan kita senantiasa diberkahi.",
 } as const;

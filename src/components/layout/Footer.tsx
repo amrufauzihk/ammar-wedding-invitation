@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import { COUPLE } from "@/lib/constants";
+import { GROOM_NAME } from "@/lib/constants";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <p className="flex items-center justify-center gap-2 font-sans text-sm text-warm-brown/70">
         Made with
         <Heart className="h-3.5 w-3.5 fill-gold/40 text-gold" aria-hidden="true" />
-        for {COUPLE.groom} & {COUPLE.bride}
+        for {GROOM_NAME}
       </p>
       <p className="mt-2 font-sans text-xs text-warm-brown/40">
         © {new Date().getFullYear()} — Digital Wedding Invitation

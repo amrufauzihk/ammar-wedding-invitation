@@ -11,7 +11,6 @@ Background music is streamed from YouTube. Update the video ID in `src/lib/const
 ## Images
 
 - `public/images/groom-placeholder.svg` — Groom photo
-- `public/images/bride-placeholder.svg` — Bride photo
 - `public/images/gallery-1.svg` through `gallery-6.svg` — Gallery photos
 
 Recommended: use `.jpg` or `.webp` for photos and update paths in `src/lib/constants.ts`.
