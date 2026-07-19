@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 import { FadeInUp } from "@/components/ui/FadeInUp";
 import { BugisOrnament } from "@/components/effects/BugisOrnament";
-import { COUPLE, WEDDING_DATE, WEDDING_QUOTE } from "@/lib/constants";
+import { GROOM_NAME, WEDDING_DATE, WEDDING_QUOTE, WEDDING_TITLE } from "@/lib/constants";
 
 function FloralDecoration({ className }: { className?: string }) {
   return (
@@ -43,17 +42,13 @@ export function Hero() {
 
       <FadeInUp className="relative z-10 max-w-3xl text-center">
         <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.35em] text-gold-dark">
-          We&apos;re Getting Married
+          {WEDDING_TITLE}
         </p>
 
         <BugisOrnament variant="divider" className="mx-auto mb-8" />
 
         <h1 className="font-serif text-4xl font-light leading-snug text-warm-brown sm:text-5xl md:text-6xl lg:text-7xl">
-          {COUPLE.groom}
-          <span className="mx-3 inline-flex items-center text-gold">
-            <Heart className="h-5 w-5 fill-gold/20 sm:h-6 sm:w-6" aria-hidden="true" />
-          </span>
-          {COUPLE.bride}
+          {GROOM_NAME}
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-warm-brown/65 sm:text-xl">

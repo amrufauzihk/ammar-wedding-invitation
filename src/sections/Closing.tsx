@@ -1,10 +1,9 @@
 "use client";
 
-import { Heart } from "lucide-react";
 import { FadeInUp } from "@/components/ui/FadeInUp";
 import { BugisOrnament } from "@/components/effects/BugisOrnament";
 import { FloatingLanterns } from "@/components/effects/FloatingLanterns";
-import { CLOSING, COUPLE } from "@/lib/constants";
+import { CLOSING, GROOM_NAME } from "@/lib/constants";
 
 export function Closing() {
   return (
@@ -27,16 +26,8 @@ export function Closing() {
             &ldquo;{CLOSING.bugisClosing}&rdquo;
           </p>
 
-          <div className="my-10 flex items-center justify-center gap-3">
-            <span className="h-px w-12 bg-gold/30" />
-            <Heart className="h-4 w-4 fill-gold/25 text-gold" aria-hidden="true" />
-            <span className="h-px w-12 bg-gold/30" />
-          </div>
-
-          <p className="font-serif text-2xl text-warm-brown sm:text-3xl">
-            {COUPLE.groom}
-            <span className="mx-3 text-gold">&</span>
-            {COUPLE.bride}
+          <p className="mt-10 font-serif text-2xl text-warm-brown sm:text-3xl">
+            {GROOM_NAME}
           </p>
 
           <BugisOrnament variant="divider" className="mx-auto mt-10" />

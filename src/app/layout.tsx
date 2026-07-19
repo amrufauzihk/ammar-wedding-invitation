@@ -17,19 +17,18 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "The Wedding of Ammar Fauzan & No Name",
+  title: "The Wedding of Ammar Fauzan",
   description:
-    "You're invited to celebrate the wedding of Ammar Fauzan and No Name. An elegant digital invitation inspired by Bugis tradition.",
+    "You're invited to celebrate the wedding of Ammar Fauzan. An elegant digital invitation inspired by Bugis tradition.",
   keywords: [
     "wedding invitation",
     "Ammar Fauzan",
-    "No Name",
     "Bugis wedding",
     "digital invitation",
   ],
   openGraph: {
-    title: "The Wedding of Ammar Fauzan & No Name",
-    description: "You're cordially invited to our wedding celebration.",
+    title: "The Wedding of Ammar Fauzan",
+    description: "You're cordially invited to the wedding celebration of Ammar Fauzan.",
     type: "website",
   },
 };

@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { BackgroundEffects } from "@/components/effects/BackgroundEffects";
 import { BugisOrnament } from "@/components/effects/BugisOrnament";
-import { COUPLE, WEDDING_DATE } from "@/lib/constants";
+import { GROOM_NAME, WEDDING_DATE, WEDDING_TITLE } from "@/lib/constants";
 
 type LandingCoverProps = {
   onOpen: () => void;
@@ -27,7 +26,7 @@ export function LandingCover({ onOpen }: LandingCoverProps) {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.4em] text-gold-dark"
         >
-          The Wedding Of
+          {WEDDING_TITLE}
         </motion.p>
 
         <motion.div
@@ -38,15 +37,7 @@ export function LandingCover({ onOpen }: LandingCoverProps) {
         >
           <BugisOrnament variant="divider" className="mb-6" />
           <h1 className="font-serif text-4xl font-light leading-tight text-warm-brown sm:text-5xl md:text-6xl">
-            {COUPLE.groom}
-          </h1>
-          <div className="my-4 flex items-center justify-center gap-3">
-            <span className="h-px w-10 bg-gold/40" />
-            <Heart className="h-4 w-4 fill-gold/30 text-gold" aria-hidden="true" />
-            <span className="h-px w-10 bg-gold/40" />
-          </div>
-          <h1 className="font-serif text-4xl font-light leading-tight text-warm-brown sm:text-5xl md:text-6xl">
-            {COUPLE.bride}
+            {GROOM_NAME}
           </h1>
           <BugisOrnament variant="divider" className="mt-6" />
         </motion.div>
@@ -77,7 +68,7 @@ export function LandingCover({ onOpen }: LandingCoverProps) {
         transition={{ delay: 1.4, duration: 1 }}
         className="absolute bottom-8 font-sans text-[10px] uppercase tracking-[0.3em] text-warm-brown/40"
       >
-        Tap to enter
+        Tap to enter · Music plays after opening
       </motion.p>
     </motion.section>
   );
