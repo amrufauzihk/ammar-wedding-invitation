@@ -1,26 +1,110 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf6f0;
+  --foreground: #3d3428;
+  --cream: #faf6f0;
+  --ivory: #fffef9;
+  --beige: #e8dfd0;
+  --gold: #c9a962;
+  --gold-light: #dfc88a;
+  --gold-dark: #a8893f;
+  --warm-brown: #5c4f3a;
+  --soft-shadow: rgba(92, 79, 58, 0.08);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--cream);
+  --color-ivory: var(--ivory);
+  --color-beige: var(--beige);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-warm-brown: var(--warm-brown);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 30%, transparent);
+  color: var(--warm-brown);
+}
+
+.gradient-cream {
+  background: linear-gradient(
+    165deg,
+    #fffef9 0%,
+    #faf6f0 35%,
+    #f0e8da 70%,
+    #e8dfd0 100%
+  );
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-card {
+  background: rgba(255, 254, 249, 0.72);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 169, 98, 0.18);
+  box-shadow: 0 8px 32px var(--soft-shadow);
+}
+
+.ornament-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold-light),
+    var(--gold),
+    var(--gold-light),
+    transparent
+  );
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 4s ease-in-out infinite;
 }
